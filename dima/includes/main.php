@@ -15,3 +15,6 @@ function getMenuItems () {
     return $html;
 }
 
+function sendEmail($email, $message) {
+    mail("joecool@example.com", "My Subject", $message . '<br>EMAIL:' . $email);
+}
