@@ -1,5 +1,5 @@
 <?php include 'templates/theme/header.tpl.php'?>
-<div class="content price" style="float: left;border: 1px solid #8C969F;padding: 5px 5px">
+<div class="content price col-md-9">
 
     <h1>Price</h1>
     Это <strong>прайс лист</strong> фотографа Александра Бырьки.<br>

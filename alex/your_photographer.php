@@ -1,5 +1,5 @@
 <?php include 'templates/theme/header.tpl.php'?>
-<div class="content Your photographer" style="float: left;border: 1px solid #8C969F;width: 850px;padding:5px">
+<div class="content your_photographer col-md-9">
     <h1>Your photographer</h1>
     Это <strong>информация</strong> о фотографе Александре Бырьки.<br>
     <br>

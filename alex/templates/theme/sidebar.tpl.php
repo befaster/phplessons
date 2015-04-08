@@ -1,4 +1,4 @@
-<ul class="nav nav-pills nav-stacked" style="max-width: 250px; float: left">
+<ul id="sidebar" class="nav nav-pills nav-stacked">
     <li class="active"><a href="#">1111</a></li>
     <li><a href="#">Портреты</a></li>
     <li><a href="#">Свадебная фотография</a></li>

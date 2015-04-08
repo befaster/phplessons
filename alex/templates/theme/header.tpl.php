@@ -9,6 +9,12 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="templates/css/styles.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
@@ -26,7 +32,6 @@
 <body>
 
 <div class="container">
-
     <!-- Static navbar -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
@@ -48,4 +53,6 @@
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
     </nav>
-    <?php include 'templates/theme/sidebar.tpl.php'?>
+    <aside class="col-md-3">
+        <?php include 'templates/theme/sidebar.tpl.php'?>
+    </aside>

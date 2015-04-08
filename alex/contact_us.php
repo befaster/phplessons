@@ -1,5 +1,5 @@
 <?php include 'templates/theme/header.tpl.php'?>
-<div class="content Contact us" style="float: left;border: 1px solid #8C969F;width: auto;">
+<div class="content contact_us col-md-9">
     <h1>Contact us</h1>
     <?php if (isset($_POST['username'])):?>
         <?php sendEmail($_POST['email'],$_POST['message']);?>
