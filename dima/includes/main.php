@@ -14,6 +14,7 @@ function getArticles() {
     return sqlSelect('SELECT * FROM articles');
 }
 
+
 /**
  * Send email
  *
@@ -32,7 +33,7 @@ function sendEmail($email, $message) {
 function sqlSelect($sql) {
     global $link;
 
-    $result = ($link, $sql);
+    $result = mysqli_query($link, $sql);
 
     $items = array();
 
