@@ -35,9 +35,14 @@
                 <a class="navbar-brand" href="#">Php Lessons</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <?php echo getMenuItems(); ?>
-                </ul>
+                <?php $items = getMenuItems(); ?>
+                <?php if (is_array($items) && count($items)) : ?>
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php foreach($items as $item) : ?>
+                        <li><a href="<?php echo $item['url']; ?>.php"><?php echo $item['title']; ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
             </div>
         </div>
     </nav>
