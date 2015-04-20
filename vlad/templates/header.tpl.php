@@ -1,3 +1,6 @@
+<?php
+//print dirname(dirname(__FILE__)) . '/includes/db.php';die; //проверка какой файл указали
+require_once dirname(dirname(__FILE__)) . '/includes/main.php';?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -15,7 +18,7 @@
     <title></title>
 </head>
 <body>
-<div class='conteiner'>
+<div class='container'>
     <div class="row">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -28,23 +31,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Magicphoto</a>
+                   <a class="navbar-brand"  href="#">Magicphoto</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Главная <span class="sr-only">(current)</span></a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-expanded="false">Портфолио
-                                <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Свадебные фото</a></li>
-                                <li><a href="#">Коллажи</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Услуги</a></li>
+                       <?php echo getMenuIteams();?>
+
+                        <?php echo getMenuIteamsDropdown();?>
+<!-- Menu articles
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-expanded="false">Статьи<span
@@ -59,8 +55,7 @@
                                 <li><a href="#">Язык цветов</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.php">Обо мне</a></li>
-                        <li><a href="contacts.php">Контакты</a></li>
+                        -->
                     </ul>
                     <!--form seach-->
                     <!--<form class="navbar-form navbar-left" role="search">
